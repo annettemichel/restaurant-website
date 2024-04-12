@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Gang of Three';
+  src: url('../assets/fonts/GangofThree.woff2') format('woff2'),
+  url('../assets/fonts/GangofThree.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+.header{
+  &-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar {
+      &-wrapper {
+        display: inline-flex;
+        flex-direction: row;
+      }
+    }
+
+    .logo{
+      font-family: 'Gang of Three', sans-serif;
+    }
+    .contact{
+      &-wrapper {
+        display: inline-flex;
+        flex-direction: row;
+      }
+
+      &-item{
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+      }
+    }
+  }
+}
+
+
+
+
