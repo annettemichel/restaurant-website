@@ -1,0 +1,8 @@
+@mixin headingStyle {
+  font-family: 'Gang of Three', sans-serif;
+  color: $color-light;
+}
+
+@mixin transitions($param...) {
+  transition: $param;
+}

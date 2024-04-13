@@ -1,0 +1,194 @@
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
+@font-face {
+  font-family: 'Gang of Three';
+  src: url("../assets/fonts/GangofThree.woff2") format("woff2"), url("../assets/fonts/GangofThree.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+.header-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header-wrapper .navbar-wrapper {
+    display: inline-flex;
+    flex-direction: row; }
+  .header-wrapper .logo {
+    font-family: 'Gang of Three', sans-serif; }
+  .header-wrapper .contact-wrapper {
+    display: inline-flex;
+    flex-direction: row; }
+  .header-wrapper .contact-item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red; }
+
+@font-face {
+  font-family: 'Gang of Three';
+  src: url("../assets/fonts/GangofThree.woff2") format("woff2"), url("../assets/fonts/GangofThree.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/* noto-sans-jp-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/noto-sans-jp-v52-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* noto-sans-jp-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/noto-sans-jp-v52-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+/* noto-sans-jp-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/noto-sans-jp-v52-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+
+.heading-wrapper {
+  text-transform: uppercase; }
+  .heading-wrapper-pre {
+    color: #898989;
+    font-size: 0.875rem; }
+  .heading-wrapper-main {
+    color: #DCDCDC;
+    font-size: 1.25rem; }
+  .heading-wrapper-post {
+    color: #C00404;
+    font-size: 0.875rem; }
+    .heading-wrapper-post::before {
+      content: '';
+      border-bottom: 2px solid #C00404; }
+    .heading-wrapper-post::after {
+      content: '';
+      border-bottom: 2px solid #C00404; }
+
+body {
+  background: #151515;
+  font-family: 'Noto Sans JP', sans-serif; }
+
+.header {
+  background: #151515;
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  .header-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header-wrapper .navbar-wrapper {
+      display: inline-flex;
+      flex-direction: row;
+      flex: 1; }
+      .header-wrapper .navbar-wrapper .nav-link {
+        margin: 0 1rem;
+        color: #DCDCDC;
+        transition: color 0.5s; }
+        .header-wrapper .navbar-wrapper .nav-link:hover {
+          color: #740f0c; }
+    .header-wrapper .logo {
+      font-family: 'Gang of Three', sans-serif;
+      color: #DCDCDC;
+      font-size: 4rem;
+      transition: color 0.5s; }
+      .header-wrapper .logo:hover {
+        color: #740f0c; }
+    .header-wrapper .contact-wrapper {
+      display: inline-flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: flex-end; }
+    .header-wrapper .contact-item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.125rem;
+      height: 3.125rem;
+      border: 1px solid #DCDCDC;
+      border-radius: 0.5rem;
+      margin: 0 10px;
+      opacity: 0.8;
+      transition: opacity 0.5s, background 0.5s; }
+      .header-wrapper .contact-item:hover {
+        opacity: 1;
+        background: #740f0c; }
+      .header-wrapper .contact-item i {
+        font-size: 1.2rem;
+        color: #DCDCDC; }
+
+.banner-wrapper .background-img {
+  background-image: url("../assets/img/background-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 37rem;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+  z-index: 1; }
+
+.banner-wrapper .highlight-img {
+  display: flex;
+  justify-content: center;
+  margin-top: calc(-514px / 2);
+  position: relative;
+  z-index: 2; }
+  .banner-wrapper .highlight-img img {
+    width: 30rem; }
+
+.banner-wrapper .cirle-border {
+  width: 65rem;
+  height: 65rem;
+  border: 2px solid #DCDCDC;
+  opacity: 0.2;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(10rem / 2);
+  z-index: 0; }
+
+.banner-wrapper .cocktail img {
+  width: 15rem; }
+
+.banner-wrapper .cocktail-item {
+  position: absolute;
+  z-index: 1; }
+
+.banner-wrapper .cocktail-id-1 {
+  bottom: 30%;
+  left: 9%; }
+
+.banner-wrapper .cocktail-id-2 {
+  bottom: 6%;
+  left: 28%; }
+
+.banner-wrapper .cocktail-id-3 {
+  bottom: 6%;
+  right: 28%; }
+
+.banner-wrapper .cocktail-id-4 {
+  bottom: 30%;
+  right: 9%; }
+
+.main {
+  background: #151515;
+  height: 150rem; }
+
+.rotatingImage {
+  transition: transform 0.8s; }

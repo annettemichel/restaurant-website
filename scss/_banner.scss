@@ -1,0 +1,75 @@
+.banner-wrapper {
+  .background-img {
+    background-image: url("../assets/img/background-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 37rem;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    z-index: 1;
+  }
+
+  .highlight-img {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(-514px / 2);
+    position: relative;
+    z-index: 2;
+
+    img {
+      width: 30rem;
+    }
+  }
+
+  .cirle-border {
+    width: 65rem;
+    height: 65rem;
+    border: 2px solid #DCDCDC;
+    opacity: 0.2;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(10rem / 2);
+    z-index: 0;
+  }
+
+  .cocktail {
+    img {
+      width: 15rem;
+    }
+
+    &-item {
+      position: absolute;
+      z-index: 1;
+    }
+
+    &-id {
+      &-1 {
+        bottom: 30%;
+        left: 9%;
+      }
+
+      &-2 {
+        bottom: 6%;
+        left: 28%;
+      }
+
+      &-3 {
+        bottom: 6%;
+        right: 28%;
+      }
+
+      &-4 {
+        bottom: 30%;
+        right: 9%;
+      }
+    }
+  }
+}
+
+.rotatingImage {
+  transition: transform 0.8s;
+}

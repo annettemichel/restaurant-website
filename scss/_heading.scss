@@ -1,0 +1,30 @@
+.heading {
+  &-wrapper {
+    text-transform: uppercase;
+
+    &-pre {
+      color: $color-grey-100;
+      font-size: $font-size-md;
+    }
+
+    &-main {
+      color: $color-light;
+      font-size: $font-size-xl;
+    }
+
+    &-post {
+      color: $color-primary;
+      font-size: $font-size-md;
+
+      &::before {
+        content: '';
+        border-bottom: 2px solid $color-primary;
+      }
+
+      &::after {
+        content: '';
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+  }
+}
