@@ -6,81 +6,41 @@
   font-style: normal;
   font-display: swap; }
 
-.header-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between; }
-  .header-wrapper .navbar-wrapper {
-    display: inline-flex;
-    flex-direction: row; }
-  .header-wrapper .logo {
-    font-family: 'Gang of Three', sans-serif; }
-  .header-wrapper .contact-wrapper {
-    display: inline-flex;
-    flex-direction: row; }
-  .header-wrapper .contact-item {
-    width: 50px;
-    height: 50px;
-    border: 1px solid red; }
-
-@font-face {
-  font-family: 'Gang of Three';
-  src: url("../assets/fonts/GangofThree.woff2") format("woff2"), url("../assets/fonts/GangofThree.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
 /* noto-sans-jp-300 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 300;
-  src: url("../assets/fonts/noto-sans-jp-v52-latin-300.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+  src: url("../assets/fonts/noto-sans-jp-v52-latin-300.woff2") format("woff2"); }
 
 /* noto-sans-jp-regular - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/noto-sans-jp-v52-latin-regular.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+  src: url("../assets/fonts/noto-sans-jp-v52-latin-regular.woff2") format("woff2"); }
 
 /* noto-sans-jp-600 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 600;
-  src: url("../assets/fonts/noto-sans-jp-v52-latin-600.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+  src: url("../assets/fonts/noto-sans-jp-v52-latin-600.woff2") format("woff2"); }
 
-.heading-wrapper {
-  text-transform: uppercase; }
-  .heading-wrapper-pre {
-    color: #898989;
-    font-size: 0.875rem; }
-  .heading-wrapper-main {
-    color: #DCDCDC;
-    font-size: 1.25rem; }
-  .heading-wrapper-post {
-    color: #C00404;
-    font-size: 0.875rem; }
-    .heading-wrapper-post::before {
-      content: '';
-      border-bottom: 2px solid #C00404; }
-    .heading-wrapper-post::after {
-      content: '';
-      border-bottom: 2px solid #C00404; }
+.body {
+  background: #151515; }
 
-body {
+p {
+  color: #DCDCDC;
+  line-height: 1.5;
+  font-weight: 300; }
+
+.main {
   background: #151515;
-  font-family: 'Noto Sans JP', sans-serif; }
+  height: 150rem; }
 
 .header {
   background: #151515;
@@ -131,64 +91,127 @@ body {
         font-size: 1.2rem;
         color: #DCDCDC; }
 
-.banner-wrapper .background-img {
-  background-image: url("../assets/img/background-header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 37rem;
-  background-attachment: fixed;
-  background-position: top;
-  position: relative;
-  z-index: 1; }
-
-.banner-wrapper .highlight-img {
-  display: flex;
-  justify-content: center;
-  margin-top: calc(-514px / 2);
-  position: relative;
-  z-index: 2; }
-  .banner-wrapper .highlight-img img {
-    width: 30rem; }
-
-.banner-wrapper .cirle-border {
-  width: 65rem;
-  height: 65rem;
-  border: 2px solid #DCDCDC;
-  opacity: 0.2;
-  border-radius: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: calc(10rem / 2);
-  z-index: 0; }
-
-.banner-wrapper .cocktail img {
-  width: 15rem; }
-
-.banner-wrapper .cocktail-item {
-  position: absolute;
-  z-index: 1; }
-
-.banner-wrapper .cocktail-id-1 {
-  bottom: 30%;
-  left: 9%; }
-
-.banner-wrapper .cocktail-id-2 {
-  bottom: 6%;
-  left: 28%; }
-
-.banner-wrapper .cocktail-id-3 {
-  bottom: 6%;
-  right: 28%; }
-
-.banner-wrapper .cocktail-id-4 {
-  bottom: 30%;
-  right: 9%; }
-
-.main {
-  background: #151515;
-  height: 150rem; }
+.banner-wrapper {
+  background: #151515; }
+  .banner-wrapper .background-img {
+    background-image: url("../assets/img/background-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 37rem;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    z-index: 1; }
+  .banner-wrapper .highlight-img {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(-514px / 2);
+    position: relative;
+    z-index: 2; }
+    .banner-wrapper .highlight-img img {
+      width: 30rem; }
+  .banner-wrapper .cirle-border {
+    width: 65rem;
+    height: 65rem;
+    border: 2px solid #DCDCDC;
+    opacity: 0.2;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(10rem / 2);
+    z-index: 0; }
+  .banner-wrapper .cocktail img {
+    width: 15rem; }
+  .banner-wrapper .cocktail-item {
+    position: absolute;
+    z-index: 1; }
+  .banner-wrapper .cocktail-id-1 {
+    bottom: 30%;
+    left: 9%; }
+  .banner-wrapper .cocktail-id-2 {
+    bottom: 6%;
+    left: 28%; }
+  .banner-wrapper .cocktail-id-3 {
+    bottom: 6%;
+    right: 28%; }
+  .banner-wrapper .cocktail-id-4 {
+    bottom: 30%;
+    right: 9%; }
 
 .rotatingImage {
   transition: transform 0.8s; }
+
+.introduction-text {
+  display: flex;
+  justify-content: center; }
+  .introduction-text p {
+    width: 50%; }
+
+.food-collection-items {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 500px; }
+
+.image-item {
+  position: absolute;
+  transition: z-index 0.1s linear, transform 0.3s ease;
+  width: 550px;
+  height: auto; }
+  .image-item:nth-child(1) {
+    margin-top: 0;
+    margin-left: 0;
+    z-index: 1; }
+  .image-item:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 30px;
+    z-index: 2; }
+  .image-item:nth-child(3) {
+    margin-top: 60px;
+    margin-left: 60px;
+    z-index: 3; }
+  .image-item:hover {
+    z-index: 4;
+    transform: translate(-10px, -10px); }
+
+.heading-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.heading-pre {
+  letter-spacing: 0.2rem;
+  color: #898989;
+  font-size: 0.875rem; }
+
+.heading-main {
+  font-family: "Gang of Three";
+  letter-spacing: 0.4rem;
+  color: #DCDCDC;
+  font-size: 4rem; }
+
+.heading-post {
+  font-family: "Gang of Three";
+  letter-spacing: 0.4rem;
+  color: #C00404;
+  font-size: 0.875rem;
+  position: relative;
+  display: inline-block; }
+  .heading-post::before, .heading-post::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background: #C00404; }
+  .heading-post::before {
+    right: 100%;
+    margin-right: 10px; }
+  .heading-post::after {
+    left: 100%;
+    margin-left: 10px; }

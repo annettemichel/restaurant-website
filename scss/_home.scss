@@ -1,0 +1,47 @@
+.introduction-text{
+  display: flex;
+  justify-content: center;
+
+  p{
+    width: 50%;
+  }
+}
+
+
+.food-collection-items {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.image-item {
+  position: absolute;
+  transition: z-index 0.1s linear, transform 0.3s ease;
+  width: 550px;
+  height: auto;
+
+  &:nth-child(1) {
+    margin-top: 0;
+    margin-left: 0;
+    z-index: 1;
+  }
+  &:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 30px;
+    z-index: 2;
+  }
+  &:nth-child(3) {
+    margin-top: 60px;
+    margin-left: 60px;
+    z-index: 3;
+  }
+
+
+  &:hover {
+    z-index: 4;
+    transform: translate(-10px, -10px);
+  }
+}
